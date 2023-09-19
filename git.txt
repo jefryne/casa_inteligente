@@ -1,0 +1,12 @@
+---- JS ----------------------------------------
+https://github.com/Azure-Samples/cognitive-services-quickstart-code.git
+---------- Windo2s -----------------------------
+https://github.com/roman09wS/app-azure.git
+
+------------Fefito ------------------------------
+https://github.com/jefryne/botcelulares.git
+https://github.com/jefryne/web_placas.git
+--------------backend fetito --------------------
+https://github.com/jefryne/casa_inteligente.git
+------------ ai 900 ----------------------------
+ git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
