@@ -10,3 +10,5 @@ https://github.com/jefryne/web_placas.git
 https://github.com/jefryne/casa_inteligente.git
 ------------ ai 900 ----------------------------
  git clone https://github.com/MicrosoftLearning/AI-900-AIFundamentals ai-900
+----------------python git ----------------------------
+https://github.com/MicrosoftLearning/AI-102-AIEngineer.git

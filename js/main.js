@@ -142,20 +142,18 @@ let audioContext = null;
 let recognizer = null;
 
 function iniciarAudioContext() {
-    // Verificar si el contexto ya está creado para evitar errores
+    
     if (audioContext === null) {
-        // Crear el contexto de audio
         audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
-        // Configuración de reconocimiento de voz
+
         const speechConfig = SpeechSDK.SpeechConfig.fromSubscription("64bd01cdd7d94e569857f92701fd3a38", "eastus");
 
-        // Configura el idioma deseado (por ejemplo, español)
-        speechConfig.speechRecognitionLanguage = "es-ES"; // Cambia a tu idioma deseado
+
+        speechConfig.speechRecognitionLanguage = "es-ES";
 
         const audioConfig = SpeechSDK.AudioConfig.fromDefaultMicrophoneInput();
 
-        // Crear el reconocedor de voz
         recognizer = new SpeechSDK.SpeechRecognizer(speechConfig, audioConfig);
         
 
@@ -208,8 +206,8 @@ getCasas()
 
 
 function hablar(texto_hablar) {
-    const apiUrl = 'https://eastus.tts.speech.microsoft.com/cognitiveservices/v1'; // Reemplaza con la URL correcta
-    const subscriptionKey = '64bd01cdd7d94e569857f92701fd3a38'; // Reemplaza con tu clave de suscripción
+    const apiUrl = 'https://eastus.tts.speech.microsoft.com/cognitiveservices/v1';
+    const subscriptionKey = '64bd01cdd7d94e569857f92701fd3a38'; 
 
     fetch(apiUrl, {
         method: 'POST',
